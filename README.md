@@ -7,3 +7,5 @@
 [![BCH compliance](https://bettercodehub.com/edge/badge/atelljohannsmothers/starter-lib?branch=master)](https://bettercodehub.com/)
 [![Greenkeeper badge](https://badges.greenkeeper.io/atelljohannsmothers/starter-lib.svg)](https://greenkeeper.io/)
 [![Stories in Ready](https://badge.waffle.io/atelljohannsmothers/starter-lib.png?label=ready&title=Ready)](https://waffle.io/atelljohannsmothers/starter-lib?utm_source=badge)
+[![Code Climate GPA](https://img.shields.io/codeclimate/github/atelljohannsmothers/starter-lib.svg)](https://codeclimate.com/)
+[![Code Climate Issues](https://img.shields.io/codeclimate/issues/github/atelljohannsmothers/starter-lib.svg)](https://codeclimate.com/)
