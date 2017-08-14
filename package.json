@@ -64,7 +64,7 @@
           {
             "root": ["./"],
             "alias": {
-              "starter-lib": "/lib/starter-lib.js",
+              "starter-lib": "/dist/starter-lib.esm.js",
               "fixtures": "/test/helpers/fixtures",
               "macros": "/test/helpers/macros",
               "mocks": "/test/helpers/mocks",
