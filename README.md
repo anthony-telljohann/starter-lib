@@ -1,3 +1,3 @@
 # library
 
-library test
+library
