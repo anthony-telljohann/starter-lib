@@ -1,5 +1,5 @@
 {
-  "name": "starter-lib",
+  "name": "@telljohann-smothers/starter-lib",
   "version": "1.0.0",
   "main": "dist/starter-lib.cjs.js",
   "module": "dist/starter-lib.esm.js",
