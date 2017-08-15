@@ -11,8 +11,8 @@
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/npm/l/@atelljohannsmothers/starter-lib.svg" alt="npm license"></a>
   <a href="https://travis-ci.org/atelljohannsmothers/starter-lib"><img src="https://travis-ci.org/atelljohannsmothers/starter-lib.svg?branch=master" alt="Travis CI build status"></a>
   <a href="https://codecov.io/gh/atelljohannsmothers/starter-lib"><img src="https://codecov.io/gh/atelljohannsmothers/starter-lib/branch/master/graph/badge.svg" alt="Codecov coverage"></a>
-  <a href="https://bettercodehub.com/results/atelljohannsmothers/starter-lib"><img src="https://bettercodehub.com/edge/badge/atelljohannsmothers/starter-lib?branch=master" alt="Better Code Hub compliance"></a>
   <a href="https://codeclimate.com/github/atelljohannsmothers/starter-lib/"><img src="https://img.shields.io/codeclimate/github/atelljohannsmothers/starter-lib.svg" alt="Code Climate gpa"></a>
+  <a href="https://bettercodehub.com/results/atelljohannsmothers/starter-lib"><img src="https://bettercodehub.com/edge/badge/atelljohannsmothers/starter-lib?branch=master" alt="Better Code Hub compliance"></a>
 </p>
 
 <p align="center">
