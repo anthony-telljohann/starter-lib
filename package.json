@@ -1,0 +1,127 @@
+{
+  "name": "@telljohann-smothers/starter-lib",
+  "version": "0.0.0-development",
+  "main": "dist/add.cjs.js",
+  "module": "dist/add.esm.js",
+  "scripts": {
+    "build": "npm run build:cjs && npm run build:es",
+    "build:cjs": "cross-env BABEL_ENV=cjs rollup -c .rollup",
+    "build:es": "cross-env BABEL_ENV=es rollup -c .rollup",
+    "clean": "npm run clean:coverage && npm run clean:nyc_output && npm run clean:dist",
+    "clean:coverage": "rm -rf coverage",
+    "clean:dist": "rm -rf dist",
+    "clean:nyc_output": "rm -rf .nyc_output",
+    "git:commit": "git-cz",
+    "precommit": "npm test",
+    "prepush": "npm test",
+    "coverage:html": "nyc report --reporter=html",
+    "coverage:lcov": "nyc report --reporter=text-lcov > coverage.lcov",
+    "coverage:upload": "npm run coverage:lcov && codecov",
+    "lint": "eslint --fix lib test",
+    "posttest": "npm run coverage:html",
+    "prebuild": "npm run clean && npm run lint",
+    "prepublishOnly": "npm test",
+    "pretest": "npm run build",
+    "report:html": "nyc report --reporter=html",
+    "report:lcov": "nyc report --reporter=text-lcov > coverage.lcov",
+    "test": "cross-env BABEL_ENV=test nyc ava",
+    "watch": "cross-env BABEL_ENV=test ava --watch",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "dependencies": {
+    "is": "^3.2.1"
+  },
+  "devDependencies": {
+    "ava": "^0.21.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.24.1",
+    "codecov": "^2.3.0",
+    "commitizen": "^2.9.6",
+    "cross-env": "^5.0.5",
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^4.4.1",
+    "eslint-plugin-prettier": "^2.1.2",
+    "husky": "^0.14.3",
+    "nyc": "^11.1.0",
+    "prettier": "^1.5.3",
+    "rollup": "^0.47.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-prettier": "^0.2.0",
+    "rollup-watch": "^4.3.1",
+    "semantic-release": "^6.3.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atelljohannsmothers/starter-lib.git"
+  },
+  "author": "Anthony Telljohann-Smothers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atelljohannsmothers/starter-lib/issues"
+  },
+  "homepage": "https://github.com/atelljohannsmothers/starter-lib#readme",
+  "files": [
+    "dist"
+  ],
+  "ava": {
+    "babel": {
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": [
+              "./"
+            ],
+            "alias": {
+              "add": "/lib/add.js",
+              "fixtures": "/test/helpers/fixtures",
+              "macros": "/test/helpers/macros",
+              "mocks": "/test/helpers/mocks",
+              "spies": "/test/helpers/spies",
+              "stubs": "/test/helpers/stubs"
+            }
+          }
+        ]
+      ]
+    },
+    "require": [
+      "babel-register"
+    ],
+    "color": true,
+    "concurrency": 25,
+    "verbose": true,
+    "failFast": false,
+    "failWithoutAssertions": true,
+    "powerAssert": true
+  },
+  "nyc": {
+    "require": [
+      "babel-register"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "parser": "babylon"
+  },
+  "release": {
+    "debug": false
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
