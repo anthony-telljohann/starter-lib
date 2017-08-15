@@ -65,18 +65,14 @@
     "url": "https://github.com/atelljohannsmothers/starter-lib/issues"
   },
   "homepage": "https://github.com/atelljohannsmothers/starter-lib#readme",
-  "files": [
-    "src"
-  ],
+  "files": ["src"],
   "ava": {
     "babel": {
       "plugins": [
         [
           "module-resolver",
           {
-            "root": [
-              "./"
-            ],
+            "root": ["./"],
             "alias": {
               "starter-lib": "/dist/starter-lib.esm.js",
               "fixtures": "/test/helpers/fixtures",
@@ -89,9 +85,7 @@
         ]
       ]
     },
-    "require": [
-      "babel-register"
-    ],
+    "require": ["babel-register"],
     "color": true,
     "concurrency": 25,
     "verbose": true,
@@ -100,9 +94,7 @@
     "powerAssert": true
   },
   "nyc": {
-    "require": [
-      "babel-register"
-    ],
+    "require": ["babel-register"],
     "sourceMap": false,
     "instrument": false
   },
