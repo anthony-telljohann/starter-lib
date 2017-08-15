@@ -15,7 +15,5 @@ test('resolves a Number', async t => {
 })
 
 test('throws TypeError', async t => {
-  await t.throws(add(1, {}))
-  await t.throws(add({}, 1))
   await t.throws(add({}, {}))
 })
