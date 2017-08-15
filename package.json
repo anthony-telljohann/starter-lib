@@ -1,6 +1,5 @@
 {
   "name": "starter-lib",
-  "version": "0.0.0-development",
   "main": "dist/add.cjs.js",
   "module": "dist/add.esm.js",
   "scripts": {
