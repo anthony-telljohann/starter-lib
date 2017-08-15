@@ -1,5 +1,5 @@
 {
-  "name": "starter-lib",
+  "name": "@atelljohannsmothers/starter-lib",
   "main": "dist/add.cjs.js",
   "module": "dist/add.esm.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "report:lcov": "nyc report --reporter=text-lcov > coverage.lcov",
     "test": "cross-env BABEL_ENV=test nyc ava",
     "watch": "cross-env BABEL_ENV=test ava --watch",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish --access=public && semantic-release post"
   },
   "dependencies": {
     "is": "^3.2.1"
