@@ -1,12 +1,12 @@
 {
   "name": "@telljohann-smothers/starter-lib",
   "version": "1.0.0",
-  "main": "dist/starter-lib.cjs.js",
-  "module": "dist/starter-lib.esm.js",
+  "main": "dist/add.cjs.js",
+  "module": "dist/add.esm.js",
   "scripts": {
     "build": "npm run build:cjs && npm run build:es",
-    "build:cjs": "cross-env BABEL_ENV=cjs rollup -c",
-    "build:es": "cross-env BABEL_ENV=es rollup -c",
+    "build:cjs": "cross-env BABEL_ENV=cjs rollup -c .rollup",
+    "build:es": "cross-env BABEL_ENV=es rollup -c .rollup",
     "clean": "npm run clean:coverage && npm run clean:nyc_output && npm run clean:dist",
     "clean:coverage": "rm -rf coverage",
     "clean:dist": "rm -rf dist",
@@ -65,16 +65,20 @@
     "url": "https://github.com/atelljohannsmothers/starter-lib/issues"
   },
   "homepage": "https://github.com/atelljohannsmothers/starter-lib#readme",
-  "files": ["src"],
+  "files": [
+    "dist"
+  ],
   "ava": {
     "babel": {
       "plugins": [
         [
           "module-resolver",
           {
-            "root": ["./"],
+            "root": [
+              "./"
+            ],
             "alias": {
-              "starter-lib": "/dist/starter-lib.esm.js",
+              "add": "/lib/add.js",
               "fixtures": "/test/helpers/fixtures",
               "macros": "/test/helpers/macros",
               "mocks": "/test/helpers/mocks",
@@ -85,7 +89,9 @@
         ]
       ]
     },
-    "require": ["babel-register"],
+    "require": [
+      "babel-register"
+    ],
     "color": true,
     "concurrency": 25,
     "verbose": true,
@@ -94,7 +100,9 @@
     "powerAssert": true
   },
   "nyc": {
-    "require": ["babel-register"],
+    "require": [
+      "babel-register"
+    ],
     "sourceMap": false,
     "instrument": false
   },
