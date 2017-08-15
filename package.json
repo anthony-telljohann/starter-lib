@@ -16,7 +16,9 @@
     "coverage:html": "nyc report --reporter=html",
     "coverage:lcov": "nyc report --reporter=text-lcov > coverage.lcov",
     "coverage:upload": "npm run coverage:lcov && codecov",
-    "lint": "eslint --fix lib test",
+    "lint": "npm run lint:lib && npm run lint:test",
+    "lint:lib": "prettier-standard 'lib/**/*.js'",
+    "lint:test": "prettier-standard 'test/**/*.js'",
     "posttest": "npm run coverage:html",
     "prebuild": "npm run clean && npm run lint",
     "prepublishOnly": "npm test",
@@ -26,6 +28,30 @@
     "test": "cross-env BABEL_ENV=test nyc ava",
     "watch": "cross-env BABEL_ENV=test ava --watch",
     "semantic-release": "semantic-release pre && npm publish --access=public && semantic-release post"
+  },
+  "dependencies": {
+    "is": "^3.2.1"
+  },
+  "devDependencies": {
+    "@bubltechnology/customizable-commit-analyzer": "^1.0.2-0",
+    "ava": "^0.22.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.24.1",
+    "codecov": "^2.3.0",
+    "commitizen": "^2.9.6",
+    "cross-env": "^5.0.5",
+    "cz-conventional-changelog": "^2.0.0",
+    "husky": "^0.14.3",
+    "nyc": "^11.1.0",
+    "prettier-standard": "^6.0.0",
+    "rollup": "^0.47.4",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-prettier": "^0.2.0",
+    "rollup-watch": "^4.3.1",
+    "semantic-release": "^6.3.6"
   },
   "dependencies": {
     "is": "^3.2.1"
