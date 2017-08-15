@@ -8,7 +8,6 @@ node_js:
   - 'node'
   - '7'
   - '6'
-  - '4'
 before_install:
   - npm install -g npm@latest
   - npm install -g greenkeeper-lockfile@latest
