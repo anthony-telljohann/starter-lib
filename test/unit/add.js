@@ -1,4 +1,4 @@
-import add from 'starter-lib'
+import add from 'add'
 import is from 'is'
 import test from 'ava'
 

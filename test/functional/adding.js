@@ -1,4 +1,4 @@
-import add from 'starter-lib'
+import add from 'add'
 import test from 'ava'
 
 test('should return the summation of every addend', async t => {
