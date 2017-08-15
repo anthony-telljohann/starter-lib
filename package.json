@@ -11,16 +11,20 @@
     "clean:coverage": "rm -rf coverage",
     "clean:dist": "rm -rf dist",
     "clean:nyc_output": "rm -rf .nyc_output",
-    "coverage": "npm run report:lcov && codecov",
+    "commit": "git-cz",
+    "coverage:html": "nyc report --reporter=html",
+    "coverage:lcov": "nyc report --reporter=text-lcov > coverage.lcov",
+    "coverage:upload": "npm run coverage:lcov && codecov",
     "lint": "eslint --fix lib test",
-    "posttest": "npm run report:html",
+    "posttest": "npm run coverage:html",
     "prebuild": "npm run clean && npm run lint",
     "prepublishOnly": "npm test",
     "pretest": "npm run build",
     "report:html": "nyc report --reporter=html",
     "report:lcov": "nyc report --reporter=text-lcov > coverage.lcov",
     "test": "cross-env BABEL_ENV=test nyc ava",
-    "watch": "cross-env BABEL_ENV=test ava --watch"
+    "watch": "cross-env BABEL_ENV=test ava --watch",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "is": "^3.2.1"
@@ -35,7 +39,9 @@
     "babel-preset-env": "^1.6.0",
     "babel-register": "^6.24.1",
     "codecov": "^2.3.0",
+    "commitizen": "^2.9.6",
     "cross-env": "^5.0.5",
+    "cz-emoji": "^0.2.0",
     "eslint": "^4.4.1",
     "eslint-plugin-prettier": "^2.1.2",
     "nyc": "^11.1.0",
@@ -43,18 +49,19 @@
     "rollup": "^0.47.4",
     "rollup-plugin-babel": "^2.7.1",
     "rollup-plugin-prettier": "^0.2.0",
-    "rollup-watch": "^4.3.1"
+    "rollup-watch": "^4.3.1",
+    "semantic-release": "^6.3.6"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atelljohannsmothers/library.git"
+    "url": "https://github.com/atelljohannsmothers/starter-lib.git"
   },
   "author": "Anthony Telljohann-Smothers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atelljohannsmothers/library/issues"
+    "url": "https://github.com/atelljohannsmothers/starter-lib/issues"
   },
-  "homepage": "https://github.com/atelljohannsmothers/library#readme",
+  "homepage": "https://github.com/atelljohannsmothers/starter-lib#readme",
   "files": ["src"],
   "ava": {
     "babel": {
@@ -98,5 +105,13 @@
     "bracketSpacing": true,
     "jsxBracketSameLine": false,
     "parser": "babylon"
+  },
+  "release": {
+    "debug": false
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    }
   }
 }
