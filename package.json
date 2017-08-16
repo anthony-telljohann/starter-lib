@@ -53,7 +53,7 @@
     "rollup-plugin-babel": "^3.0.2",
     "rollup-plugin-prettier": "^0.2.0",
     "rollup-watch": "^4.3.1",
-    "semantic-release": "^6.3.6"
+    "semantic-release": "^7.0.1"
   },
   "repository": {
     "type": "git",
