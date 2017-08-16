@@ -18,6 +18,7 @@
 <p align="center">
   <a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release"></a>
   <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg" alt="styled with prettier"></a>
+  <a href="https://github.com/sheerun/prettier-standard"><img src="https://img.shields.io/badge/code_style-prettier--standard-brightgreen.svg" alt="code style prettier-standard"></a>
   <a href="https://github.com/greenkeeperio/greenkeeper"><img src="https://badges.greenkeeper.io/atelljohannsmothers/starter-lib.svg" alt="Greenkeeper enabled"></a>
   <a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt="commitizen friendly"></a>
 </p>
