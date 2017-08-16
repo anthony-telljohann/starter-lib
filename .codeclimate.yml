@@ -1,1 +1,4 @@
 JavaScript: true
+engines:
+  eslint:
+    enabled: false
