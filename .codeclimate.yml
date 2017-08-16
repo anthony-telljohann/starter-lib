@@ -1,7 +1,1 @@
 JavaScript: true
-engines:
-  eslint:
-    enabled: true
-    checks:
-      prettier/prettier:
-        enabled: false
