@@ -17,7 +17,7 @@
     "coverage:lcov": "nyc report --reporter=text-lcov > coverage.lcov",
     "coverage:upload": "npm run coverage:lcov && codecov",
     "lint": "npm run lint:lib && npm run lint:test",
-    "lint:dist": "prettier-standard 'dist/**/*.js,",
+    "lint:dist": "prettier-standard 'dist/**/*.js'",
     "lint:lib": "prettier-standard 'lib/**/*.js'",
     "lint:test": "prettier-standard 'test/**/*.js'",
     "postbuild": "npm run lint:dist",
