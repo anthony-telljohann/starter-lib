@@ -1,1 +1,14 @@
-JavaScript: true
+engines:
+  fixme:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+        javascript:
+          mass_threshold: 20
+ratings:
+  paths:
+  - "**.js"
+exclude_paths:
+- test/**/*
