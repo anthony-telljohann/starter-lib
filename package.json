@@ -5,8 +5,8 @@
   "module": "dist/add.esm.js",
   "scripts": {
     "build": "npm run build:cjs && npm run build:es",
-    "build:cjs": "cross-env BABEL_ENV=cjs rollup -c .rollup",
-    "build:es": "cross-env BABEL_ENV=es rollup -c .rollup",
+    "build:cjs": "cross-env BABEL_ENV=cjs rollup -c rollup.config.js",
+    "build:es": "cross-env BABEL_ENV=es rollup -c rollup.config.js",
     "clean": "npm run clean:coverage && npm run clean:nyc_output && npm run clean:dist",
     "clean:coverage": "rm -rf coverage",
     "clean:dist": "rm -rf dist",
