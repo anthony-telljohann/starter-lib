@@ -101,13 +101,6 @@
     "failWithoutAssertions": true,
     "powerAssert": true
   },
-  "nyc": {
-    "require": [
-      "babel-register"
-    ],
-    "sourceMap": false,
-    "instrument": false
-  },
   "release": {
     "debug": false,
     "analyzeCommits": "@bubltechnology/customizable-commit-analyzer"
