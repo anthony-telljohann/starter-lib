@@ -11,6 +11,7 @@
     "clean:coverage": "rm -rf coverage",
     "clean:dist": "rm -rf dist",
     "clean:nyc_output": "rm -rf .nyc_output",
+    "format": "pre-commit run prettier --all-files",
     "git:commit": "git-cz",
     "precommit": "npm test",
     "prepush": "npm test",
