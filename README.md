@@ -39,6 +39,12 @@ Install [pre-commit](http://pre-commit.com/)
 brew install pre-commit
 ```
 
+Install [yarn](https://yarnpkg.com/)
+
+```
+brew install yarn --without-node
+```
+
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
