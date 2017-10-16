@@ -33,6 +33,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+Install [Homebrew](https://brew.sh/)
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 Install [pre-commit](http://pre-commit.com/)
 
 ```
