@@ -25,6 +25,8 @@
 
 # Project Title
 
+[![Join the chat at https://gitter.im/starter-lib/Lobby](https://badges.gitter.im/starter-lib/Lobby.svg)](https://gitter.im/starter-lib/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 One Paragraph of project description goes here
 
 ## Getting Started
