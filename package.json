@@ -97,7 +97,7 @@
     "powerAssert": true
   },
   "release": {
-    "debug": false,
+    "debug": true,
     "analyzeCommits": "@bubltechnology/customizable-commit-analyzer"
   },
   "config": {
