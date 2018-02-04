@@ -103,6 +103,11 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
+    },
+    "commitTypeMap": {
+      "chore": "patch",
+      "style": "patch",
+      "test": "patch"
     }
   }
 }
