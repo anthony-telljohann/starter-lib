@@ -1,6 +1,7 @@
 {
   "name": "@atelljohannsmothers/starter-lib",
   "description": "The starting point for writing next generation JavaScript.",
+  "version": "0.0.0",
   "main": "dist/add.cjs.js",
   "module": "dist/add.esm.js",
   "scripts": {
