@@ -15,7 +15,11 @@ before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
 after_success:
 - yarn run coverage:upload
-- yarn run semantic-release
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npx semantic-release
 branches:
   except:
   - /^v\d+\.\d+\.\d+$/
