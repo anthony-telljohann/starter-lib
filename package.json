@@ -96,7 +96,21 @@
     "powerAssert": true
   },
   "release": {
-    "debug": true
+    "debug": true,
+    "releaseRules": [
+      {
+        "type": "chore",
+        "release": "patch"
+      },
+      {
+        "type": "refactor",
+        "release": "patch"
+      },
+      {
+        "type": "style",
+        "release": "patch"
+      }
+    ]
   },
   "config": {
     "commitizen": {
