@@ -44,9 +44,9 @@
   dependencies:
     arrify "^1.0.1"
 
-"@istanbuljs/nyc-config-babel@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@istanbuljs/nyc-config-babel/-/nyc-config-babel-1.2.2.tgz#9f80780b8766b4b7e6840d9ba95eec0cd92067d8"
+"@istanbuljs/nyc-config-babel@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@istanbuljs/nyc-config-babel/-/nyc-config-babel-2.0.0.tgz#f180f5b41d92055c7f41f0785c402a74bef7f544"
 
 "@ladjs/time-require@^0.1.4":
   version "0.1.4"
