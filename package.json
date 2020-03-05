@@ -47,7 +47,7 @@
     "babel-register": "^6.24.1",
     "codecov": "^3.0.0",
     "commitizen": "^2.9.6",
-    "cross-env": "^5.0.5",
+    "cross-env": "^7.0.2",
     "cz-conventional-changelog": "^2.0.0",
     "nyc": "^11.1.0",
     "prettier": "^1.10.2",
